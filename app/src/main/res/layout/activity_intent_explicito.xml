@@ -5,6 +5,83 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#225C6D"
+    android:backgroundTint="#666666"
     tools:context=".intents.IntentExplicito">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBebida"
+        android:layout_width="409dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutComida"
+        tools:layout_editor_absoluteX="1dp">
+
+        <TextView
+            android:id="@+id/LabelBebida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Bebida"
+            android:textColor="#E91E63"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/textInputBebida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E91E63"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnComprar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#000000"
+        android:text="Comprar"
+        android:textColor="#E91E63"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutBebida" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutComida"
+        android:layout_width="409dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/LabelComida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Comida"
+            android:textColor="#E91E63"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/textInputComida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E91E63"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

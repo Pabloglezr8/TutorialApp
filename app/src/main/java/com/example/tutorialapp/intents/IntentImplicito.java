@@ -1,6 +1,8 @@
 package com.example.tutorialapp.intents;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,5 +24,18 @@ public class IntentImplicito extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+    TextView textViewComida = findViewById(R.id.recuperarComida);
+    TextView textViewBebida = findViewById(R.id.recuperarBebida);
+
+        //Recover Data
+        Bundle extras = getIntent().getExtras();
+        String textoPrueba = extras.getString("prueba");
+
+        String textoComida = extras.getString("comida");
+        String textoBebida = extras.getString("bebida");
+
+        Log.d("prueba", textoPrueba);
+
     }
 }
